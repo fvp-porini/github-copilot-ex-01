@@ -59,19 +59,119 @@ section h3 {
 
 .activity-card {
   margin-bottom: 15px;
-  padding: 15px;
+  padding: 18px;
   border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #ffffff 0%, #f7f9fc 100%);
+  box-shadow: 0 10px 24px rgba(26, 35, 126, 0.08);
 }
 
 .activity-card h4 {
-  margin-bottom: 10px;
+  margin-bottom: 0;
   color: #0066cc;
 }
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.availability-pill {
+  flex-shrink: 0;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background-color: #e8eaf6;
+  color: #283593;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.activity-description {
+  color: #4b5563;
+}
+
+.participants-section {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid #dbe3f4;
+}
+
+.participants-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+  color: #1f2937;
+}
+
+.participants-heading span {
+  font-size: 14px;
+  color: #5c6b8a;
+}
+
+.participants-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #334155;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background-color: #eef2ff;
+  border: 1px solid #d9e2ff;
+}
+
+.participant-item + .participant-item {
+  margin-top: 8px;
+}
+
+.participant-email {
+  overflow-wrap: anywhere;
+}
+
+.participant-delete {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border-radius: 999px;
+  background-color: #ffe4e6;
+  color: #be123c;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.participant-delete:hover {
+  background-color: #fecdd3;
+}
+
+.participant-delete:focus-visible {
+  outline: 3px solid rgba(190, 18, 60, 0.25);
+  outline-offset: 2px;
+}
+
+.participants-list .empty-state {
+  color: #6b7280;
+  font-style: italic;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background-color: #f8fafc;
 }
 
 .form-group {
